@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F421B235-9EC4-473B-945E-2E447218A03D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Online_CEIT_Grading_System.My.MyApplication</StartupObject>
+    <RootNamespace>Online_CEIT_Grading_System</RootNamespace>
+    <AssemblyName>Online CEIT Grading System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Online CEIT Grading System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Online CEIT Grading System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Transitions, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\dot-net-transitions.1.2.1.0\lib\net40-full\Transitions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin Menu Form.Designer.vb">
+      <DependentUpon>Admin Menu Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Menu Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackupDB.Designer.vb">
+      <DependentUpon>BackupDB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BackupDB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class Form.Designer.vb">
+      <DependentUpon>Class Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Course Form.Designer.vb">
+      <DependentUpon>Course Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Course Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drop Form.Designer.vb">
+      <DependentUpon>Drop Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Drop Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faculty Form.Designer.vb">
+      <DependentUpon>Faculty Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faculty Menu Form.Designer.vb">
+      <DependentUpon>Faculty Menu Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty Menu Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Final Form.Designer.vb">
+      <DependentUpon>Final Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Final Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Final Grading Form.Designer.vb">
+      <DependentUpon>Final Grading Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Final Grading Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GradeSheet.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GradeSheet.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GradeSlip.Designer.vb">
+      <DependentUpon>GradeSlip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GradeSlip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grading Sheet Form.Designer.vb">
+      <DependentUpon>Grading Sheet Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Grading Sheet Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INC Form.Designer.vb">
+      <DependentUpon>INC Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INC Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Midterm Form.Designer.vb">
+      <DependentUpon>Midterm Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Midterm Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Midterm Grading Form.Designer.vb">
+      <DependentUpon>Midterm Grading Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Midterm Grading Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PrintForm.Designer.vb">
+      <DependentUpon>PrintForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrintForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room Form.Designer.vb">
+      <DependentUpon>Room Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Room Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Section.Designer.vb">
+      <DependentUpon>Section.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Section.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetActiveSem.Designer.vb">
+      <DependentUpon>SetActiveSem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SetActiveSem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetFinalEncoding.Designer.vb">
+      <DependentUpon>SetFinalEncoding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SetFinalEncoding.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Form.Designer.vb">
+      <DependentUpon>Student Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subject Form.Designer.vb">
+      <DependentUpon>Subject Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Subject Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome Screen.Designer.vb">
+      <DependentUpon>Welcome Screen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome Screen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin Menu Form.resx">
+      <DependentUpon>Admin Menu Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BackupDB.resx">
+      <DependentUpon>BackupDB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class Form.resx">
+      <DependentUpon>Class Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Course Form.resx">
+      <DependentUpon>Course Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drop Form.resx">
+      <DependentUpon>Drop Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faculty Form.resx">
+      <DependentUpon>Faculty Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faculty Menu Form.resx">
+      <DependentUpon>Faculty Menu Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Final Form.resx">
+      <DependentUpon>Final Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Final Grading Form.resx">
+      <DependentUpon>Final Grading Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradeSheet.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>GradeSheet.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradeSlip.resx">
+      <DependentUpon>GradeSlip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grading Sheet Form.resx">
+      <DependentUpon>Grading Sheet Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INC Form.resx">
+      <DependentUpon>INC Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Midterm Form.resx">
+      <DependentUpon>Midterm Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Midterm Grading Form.resx">
+      <DependentUpon>Midterm Grading Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintForm.resx">
+      <DependentUpon>PrintForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Room Form.resx">
+      <DependentUpon>Room Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Section.resx">
+      <DependentUpon>Section.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetActiveSem.resx">
+      <DependentUpon>SetActiveSem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetFinalEncoding.resx">
+      <DependentUpon>SetFinalEncoding.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Form.resx">
+      <DependentUpon>Student Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subject Form.resx">
+      <DependentUpon>Subject Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome Screen.resx">
+      <DependentUpon>Welcome Screen.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

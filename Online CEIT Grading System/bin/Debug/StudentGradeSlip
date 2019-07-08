@@ -1,0 +1,52 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <Subject_x0020_Code>GAT105</Subject_x0020_Code>
+    <Subject_x0020_Description>Basic Unity</Subject_x0020_Description>
+    <Units>3</Units>
+    <Average>DRP</Average>
+    <Faculty>William Bill Gates</Faculty>
+  </Table>
+  <Table>
+    <Subject_x0020_Code>ICT100</Subject_x0020_Code>
+    <Subject_x0020_Description>Computer Programming 1</Subject_x0020_Description>
+    <Units>3</Units>
+    <Average>3.00</Average>
+    <Faculty>William Bill Gates</Faculty>
+  </Table>
+  <Table>
+    <Subject_x0020_Code>ICT100</Subject_x0020_Code>
+    <Subject_x0020_Description>Computer Programming 1</Subject_x0020_Description>
+    <Units>3</Units>
+    <Average>INC</Average>
+    <Faculty>William Bill Gates</Faculty>
+  </Table>
+  <Table>
+    <Subject_x0020_Code>ICT100</Subject_x0020_Code>
+    <Subject_x0020_Description>Computer Programming 1</Subject_x0020_Description>
+    <Units>3</Units>
+    <Average>0</Average>
+    <Faculty>William Bill Gates</Faculty>
+  </Table>
+  <Table>
+    <Subject_x0020_Code>ICT104</Subject_x0020_Code>
+    <Subject_x0020_Description>Graphic Design</Subject_x0020_Description>
+    <Units>3</Units>
+    <Average>2.75</Average>
+    <Faculty>William Bill Gates</Faculty>
+  </Table>
+  <Table>
+    <Subject_x0020_Code>GAT105</Subject_x0020_Code>
+    <Subject_x0020_Description>Basic Unity</Subject_x0020_Description>
+    <Units>3</Units>
+    <Average>5.00</Average>
+    <Faculty>William Bill Gates</Faculty>
+  </Table>
+  <Table>
+    <Subject_x0020_Code>CPE107</Subject_x0020_Code>
+    <Subject_x0020_Description>Robotics</Subject_x0020_Description>
+    <Units>3</Units>
+    <Average>INC</Average>
+    <Faculty>William Bill Gates</Faculty>
+  </Table>
+</NewDataSet>
